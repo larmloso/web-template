@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>navbar-001</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Open Sans";
+            height: 100vh;
+        }
+
+        .container {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        ul {
+            margin-top: 0;
+            margin-left: 0%;
+            margin-right: 3%;
+        }
+        ul li{
+            display: inline;
+        }
+
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+            position: sticky;
+            top: 0;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+        .topnav-right {
+            float: right;
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav li:not(:first-child) {
+                display: none;
+            }
+
+            .topnav-right a{
+                display: none;
+                
+            }
+
+            .topnav a.icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+                display: flex;
+            }
+
+            .topnav-right {
+                float: none;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {
+                position: relative;
+            }
+
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .topnav.responsive li {
+                float: none;
+                display: flex;
+                text-align: left;
+            }
+
+            .topnav-right {
+                float: none;
+            }
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <ul class="ul">
+            <li><a href="#home" class="active">Myapp</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li>
+                <div class="topnav-right" id="topnav-right">
+                    <a href="#search">Search</a>
+                    <a href="#about">About</a>
+                </div>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </li>
+        </ul>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <!-- <a href="#home" class="active">Myapp</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+
+        <div class="topnav-right" id="topnav-right">
+            <a href="#search">Search</a>
+            <a href="#about">About</a>
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a> -->
+
+    </div>
+
+    <div class="container">
+        <h2>Responsive Topnav Example</h2>
+        <p>Resize the browser window to see how it works.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est architecto alias fugit? Exercitationem aliquid
+            pariatur, tenetur nam totam aut optio harum recusandae corporis commodi vel atque, dolores culpa praesentium
+            aperiam, rerum hic. Voluptate earum voluptatem tempora aut cupiditate non recusandae expedita illo, facilis
+            ducimus vero laboriosam ratione sed quia autem aperiam velit iste nesciunt hic. Pariatur cum mollitia maxime
+            est natus beatae saepe facilis quis? Impedit temporibus excepturi voluptatum a officia amet libero sint
+            maiores earum nobis recusandae modi mollitia, neque ea officiis asperiores ex odit vitae aspernatur atque
+            aliquid saepe possimus blanditiis. Repudiandae natus rem provident ea odio beatae illo. Ipsum quod itaque
+            vero in, id omnis, nesciunt, qui natus voluptatem illo eligendi corporis amet accusantium nulla praesentium.
+            Distinctio magni aut neque eligendi nam odio enim unde nobis accusantium at, dignissimos quas iure! Laborum
+            suscipit veritatis accusamus id enim at tempora exercitationem ad dolor inventore culpa maiores illo quod
+            ipsum corrupti est quas, rem magnam aut dolores autem! Labore id, ullam laborum, beatae dolorum saepe
+            repellat tenetur ducimus sunt possimus magni nam, magnam blanditiis enim exercitationem soluta? Facilis
+            voluptates rerum quam nisi harum, dolorem deleniti eius pariatur, dicta suscipit consequuntur, optio
+            mollitia eos natus reiciendis praesentium aliquam culpa ut.</p>
+    </div>
+    <div class="container">
+        <h2>Responsive Topnav Example</h2>
+        <p>Resize the browser window to see how it works.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est architecto alias fugit? Exercitationem aliquid
+            pariatur, tenetur nam totam aut optio harum recusandae corporis commodi vel atque, dolores culpa praesentium
+            aperiam, rerum hic. Voluptate earum voluptatem tempora aut cupiditate non recusandae expedita illo, facilis
+            ducimus vero laboriosam ratione sed quia autem aperiam velit iste nesciunt hic. Pariatur cum mollitia maxime
+            est natus beatae saepe facilis quis? Impedit temporibus excepturi voluptatum a officia amet libero sint
+            maiores earum nobis recusandae modi mollitia, neque ea officiis asperiores ex odit vitae aspernatur atque
+            aliquid saepe possimus blanditiis. Repudiandae natus rem provident ea odio beatae illo. Ipsum quod itaque
+            vero in, id omnis, nesciunt, qui natus voluptatem illo eligendi corporis amet accusantium nulla praesentium.
+            Distinctio magni aut neque eligendi nam odio enim unde nobis accusantium at, dignissimos quas iure! Laborum
+            suscipit veritatis accusamus id enim at tempora exercitationem ad dolor inventore culpa maiores illo quod
+            ipsum corrupti est quas, rem magnam aut dolores autem! Labore id, ullam laborum, beatae dolorum saepe
+            repellat tenetur ducimus sunt possimus magni nam, magnam blanditiis enim exercitationem soluta? Facilis
+            voluptates rerum quam nisi harum, dolorem deleniti eius pariatur, dicta suscipit consequuntur, optio
+            mollitia eos natus reiciendis praesentium aliquam culpa ut.</p>
+    </div>
+    <div class="container">
+        <h2>Responsive Topnav Example</h2>
+        <p>Resize the browser window to see how it works.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est architecto alias fugit? Exercitationem aliquid
+            pariatur, tenetur nam totam aut optio harum recusandae corporis commodi vel atque, dolores culpa praesentium
+            aperiam, rerum hic. Voluptate earum voluptatem tempora aut cupiditate non recusandae expedita illo, facilis
+            ducimus vero laboriosam ratione sed quia autem aperiam velit iste nesciunt hic. Pariatur cum mollitia maxime
+            est natus beatae saepe facilis quis? Impedit temporibus excepturi voluptatum a officia amet libero sint
+            maiores earum nobis recusandae modi mollitia, neque ea officiis asperiores ex odit vitae aspernatur atque
+            aliquid saepe possimus blanditiis. Repudiandae natus rem provident ea odio beatae illo. Ipsum quod itaque
+            vero in, id omnis, nesciunt, qui natus voluptatem illo eligendi corporis amet accusantium nulla praesentium.
+            Distinctio magni aut neque eligendi nam odio enim unde nobis accusantium at, dignissimos quas iure! Laborum
+            suscipit veritatis accusamus id enim at tempora exercitationem ad dolor inventore culpa maiores illo quod
+            ipsum corrupti est quas, rem magnam aut dolores autem! Labore id, ullam laborum, beatae dolorum saepe
+            repellat tenetur ducimus sunt possimus magni nam, magnam blanditiis enim exercitationem soluta? Facilis
+            voluptates rerum quam nisi harum, dolorem deleniti eius pariatur, dicta suscipit consequuntur, optio
+            mollitia eos natus reiciendis praesentium aliquam culpa ut.</p>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
